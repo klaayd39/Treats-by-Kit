@@ -101,7 +101,7 @@ export default function App() {
       <div
         role="status"
         aria-live="polite"
-        className={`pointer-events-none fixed bottom-24 left-1/2 z-50 -translate-x-1/2 rounded-full bg-ink px-4 py-2 text-sm text-cream transition lg:bottom-8 ${
+        className={`pointer-events-none fixed bottom-24 left-1/2 z-50 -translate-x-1/2 rounded-full bg-ink px-4 py-2 text-sm text-cream transition min-[744px]:bottom-8 ${
           toast ? "opacity-100" : "opacity-0"
         }`}
       >

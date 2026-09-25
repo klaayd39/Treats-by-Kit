@@ -4,7 +4,7 @@ export default function BottomNavigation({ view, count, onMenu, onCart }) {
   return (
     <nav
       aria-label="Primary"
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-line/80 bg-cream/95 px-4 py-2 backdrop-blur landscape:min-[1024px]:hidden"
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-line/80 bg-cream/95 px-4 py-2 backdrop-blur min-[744px]:hidden"
       style={{ paddingBottom: "max(0.5rem, env(safe-area-inset-bottom))" }}
     >
       <div className="mx-auto grid max-w-md grid-cols-2 gap-2">

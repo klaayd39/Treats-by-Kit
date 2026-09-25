@@ -4,7 +4,7 @@ import Logo from "../components/Logo"
 
 export default function OrderConfirmation({ order, onBack }) {
   return (
-    <section className="flex min-h-[calc(100dvh-5rem)] items-center justify-center px-5 py-12 pb-28 landscape:min-[1024px]:pb-12">
+    <section className="flex min-h-[calc(100dvh-5rem)] items-center justify-center px-5 py-12 pb-28 min-[744px]:pb-12">
       <div className="w-full max-w-lg text-center">
         <Logo className="mx-auto h-20 w-20 rounded-3xl" />
         <div className="mx-auto mt-6 flex h-14 w-14 items-center justify-center rounded-full bg-blue text-white">
