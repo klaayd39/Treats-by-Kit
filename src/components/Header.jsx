@@ -6,9 +6,9 @@ export default function Header({ count, onCart }) {
   return (
     <header className="relative flex h-[4.5rem] items-center justify-between gap-4 px-5 sm:h-20 sm:px-8 lg:px-12">
       <div className="flex min-w-0 items-center gap-3">
-        <Logo className="h-12 w-9 shrink-0 text-blue-deep" />
+        <Logo className="h-12 w-12 shrink-0 rounded-2xl" />
         <div className="min-w-0">
-          <p className="truncate font-script text-[2rem] leading-none text-blue-deep sm:text-[2.35rem]">
+          <p className="font-script text-[2.35rem] font-semibold leading-[1.05] tracking-[0.01em] text-blue-deep sm:text-[2.7rem]">
             {brand.name}
           </p>
         </div>
