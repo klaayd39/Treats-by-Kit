@@ -24,7 +24,7 @@ export default function MenuCard({ item, index, onOpen, onAdd }) {
         className="group text-center"
         aria-label={`View ${item.name}`}
       >
-        <div className="relative mx-auto aspect-[4/5] max-h-[280px] overflow-hidden rounded-[1.75rem] bg-blue-soft sm:max-h-none">
+        <div className="relative mx-auto aspect-[4/5] max-h-60 overflow-hidden rounded-3xl bg-blue-soft sm:max-h-80 sm:rounded-[1.75rem] min-[744px]:max-h-none max-lg:landscape:max-h-52">
           <img
             src={item.image}
             alt=""
@@ -35,7 +35,7 @@ export default function MenuCard({ item, index, onOpen, onAdd }) {
           {item.tag && (
             <p className="text-[11px] uppercase tracking-[0.24em] text-blue">{item.tag}</p>
           )}
-          <h3 className="mt-1 font-serif text-[1.85rem] font-medium leading-tight text-blue-deep sm:text-[2.05rem]">
+          <h3 className="mt-1 font-serif text-[1.65rem] font-medium leading-tight text-blue-deep sm:text-[2.05rem]">
             {item.name}
           </h3>
           <p className="mx-auto mt-2 line-clamp-2 max-w-[28ch] text-sm leading-relaxed text-muted">{item.description}</p>

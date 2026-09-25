@@ -8,7 +8,7 @@ export default function CartItem({ line, onQty, onRemove }) {
       <div className="min-w-0 flex-1">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <p className="font-serif text-[1.7rem] font-medium leading-none text-blue-deep">{line.name}</p>
+            <p className="font-serif text-2xl font-medium leading-tight text-blue-deep sm:text-[1.7rem]">{line.name}</p>
             {line.sizeLabel && <p className="mt-1 text-xs text-muted">{line.sizeLabel}</p>}
             {line.addons?.length > 0 && (
               <p className="mt-1 text-xs text-muted">{line.addons.map((addon) => addon.name).join(", ")}</p>

@@ -7,7 +7,7 @@ export default function OrderSummary({ subtotal, onPlace, disabled }) {
   const total = subtotal + service
 
   return (
-    <div className="border-t border-line bg-cream px-6 py-5 sm:px-8">
+    <div className="border-t border-line bg-cream px-5 py-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] sm:px-8">
       <dl className="space-y-2.5 text-sm">
         <div className="flex justify-between">
           <dt className="text-muted">Subtotal</dt>

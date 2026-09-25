@@ -30,7 +30,7 @@ export default function CartDrawer({ open, onClose, lines, subtotal, onQty, onRe
         role="dialog"
         aria-modal="true"
         aria-label="Your order"
-        className={`absolute inset-y-0 right-0 flex w-full max-w-md flex-col bg-cream shadow-2xl transition-transform duration-300 sm:max-w-[460px] landscape:min-[1024px]:max-w-[500px] ${
+        className={`absolute inset-y-0 right-0 flex w-full max-w-md flex-col bg-cream shadow-2xl transition-transform duration-300 sm:max-w-[460px] lg:max-w-[500px] ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >

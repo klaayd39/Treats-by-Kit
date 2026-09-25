@@ -47,10 +47,10 @@ export default function ProductModal({ item, onClose, onAdd }) {
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="modal-in relative flex max-h-[100dvh] w-full flex-col overflow-hidden bg-cream shadow-[0_24px_80px_-32px_rgba(58,69,80,0.45)] sm:max-h-[min(880px,92dvh)] sm:max-w-3xl sm:rounded-[1.75rem] landscape:min-[1024px]:max-w-5xl landscape:min-[1024px]:grid landscape:min-[1024px]:grid-cols-[1.05fr_0.95fr]"
+        className="modal-in relative flex max-h-[100dvh] w-full flex-col overflow-hidden bg-cream shadow-[0_24px_80px_-32px_rgba(58,69,80,0.45)] sm:max-h-[min(880px,92dvh)] sm:max-w-3xl sm:rounded-[1.75rem] lg:max-w-5xl lg:grid lg:grid-cols-[1.05fr_0.95fr]"
       >
-        <div className="relative h-64 shrink-0 bg-blue-soft sm:h-80 landscape:min-[1024px]:h-auto">
-          <img src={item.image} alt="" className="h-full w-full object-cover landscape:min-[1024px]:absolute landscape:min-[1024px]:inset-0" />
+        <div className="relative h-44 shrink-0 bg-blue-soft max-sm:landscape:h-32 sm:h-72 lg:h-auto">
+          <img src={item.image} alt="" className="h-full w-full object-cover lg:absolute lg:inset-0" />
           <button
             type="button"
             onClick={onClose}
@@ -64,7 +64,7 @@ export default function ProductModal({ item, onClose, onAdd }) {
         <div className="flex min-h-0 flex-1 flex-col">
           <div className="min-h-0 flex-1 overflow-y-auto px-6 py-6 sm:px-8 sm:py-8">
             {item.tag && <p className="text-[11px] uppercase tracking-[0.24em] text-blue">{item.tag}</p>}
-            <h2 id={titleId} className="mt-1 font-serif text-4xl font-medium leading-none text-blue-deep sm:text-5xl">
+            <h2 id={titleId} className="mt-1 font-serif text-[clamp(2rem,6vw,3rem)] font-medium leading-none text-blue-deep">
               {item.name}
             </h2>
             <p className="mt-3 max-w-prose text-sm leading-relaxed text-muted sm:text-base">{item.description}</p>
@@ -145,7 +145,7 @@ export default function ProductModal({ item, onClose, onAdd }) {
             </div>
           </div>
 
-          <div className="border-t border-line bg-cream px-6 py-4 sm:px-8">
+          <div className="border-t border-line bg-cream px-6 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] sm:px-8">
             <button
               type="button"
               onClick={submit}

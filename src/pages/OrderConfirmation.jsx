@@ -11,7 +11,7 @@ export default function OrderConfirmation({ order, onBack }) {
           <Check size={26} />
         </div>
         <p className="mt-6 font-script text-4xl text-blue">Order received</p>
-        <h1 className="mt-1 font-serif text-5xl font-medium text-blue-deep sm:text-6xl">Thank you</h1>
+        <h1 className="mt-1 font-serif text-[clamp(2.75rem,8vw,3.75rem)] font-medium text-blue-deep">Thank you</h1>
         <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-muted sm:text-base">
           Your order has been sent to the kitchen.
         </p>
