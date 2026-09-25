@@ -11,13 +11,8 @@ export default function Header({ count, onCart }) {
           <p className="truncate font-script text-[2rem] leading-none text-blue-deep sm:text-[2.35rem]">
             {brand.name}
           </p>
-          <p className="mt-0.5 text-[10px] uppercase tracking-[0.28em] text-blue sm:hidden">Table {brand.table}</p>
         </div>
       </div>
-
-      <p className="pointer-events-none absolute left-1/2 hidden -translate-x-1/2 font-serif text-sm tracking-[0.42em] text-blue sm:block">
-        TABLE {brand.table}
-      </p>
 
       <button
         type="button"

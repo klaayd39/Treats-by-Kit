@@ -19,7 +19,7 @@ export default function OrderConfirmation({ order, onBack }) {
         <p className="mt-2 text-sm text-muted">Estimated preparation time</p>
         <p className="text-lg text-ink">{brand.prepTime}</p>
         <p className="mt-6 text-sm text-muted">
-          Table {brand.table} · {formatPrice(order.total)}
+          {formatPrice(order.total)}
         </p>
         <button
           type="button"
